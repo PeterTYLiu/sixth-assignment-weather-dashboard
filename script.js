@@ -161,7 +161,7 @@ let search = () => {
     })
     .then(() => {
       fetch(
-        `http://api.openweathermap.org/data/2.5/uvi?appid=${APIKey}&lat=${coords.lat}&lon=${coords.lon}`
+        `https://api.openweathermap.org/data/2.5/uvi?appid=${APIKey}&lat=${coords.lat}&lon=${coords.lon}`
       )
         .then(response => response.json())
         .then(data => {
